@@ -11,7 +11,4 @@ def min_abs(arr):
         if _abs == _min:
             res.append([arr[i], arr[i + 1]])
     
-    return res
-
-lista = [1,-1,3,0,8,1,3,4,6,1,11,2,3]
-print(abs(min_abs(lista)[0][0] - min_abs(lista)[0][1]))
+    return abs(res[0][0] - res[0][1])
